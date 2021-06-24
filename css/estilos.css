@@ -152,15 +152,14 @@ header{
 }
 .carousel-caption h2{
     line-height: 36px;
+    color: rgb(74, 44, 44);
 }
 #carouselExampleCaptions > div.carousel-inner > div.carousel-item.active > div > p:nth-child(2){
     display: none;
     color: rgb(74, 44, 44);
 }
 
-.carousel-caption h2{
-    color: rgb(74, 44, 44);
-}
+
 
 .hover li a:hover{
     background: blanchedalmond;
@@ -220,7 +219,6 @@ h3{
         position: absolute;
         right: 0;
         top: 0.1rem;
-        left: 375px;
         padding-top: 0.25rem;
         padding-bottom: 1.25rem;
         color: #fff;
@@ -229,12 +227,19 @@ h3{
 
     }
 
+    .will{
+        border-radius: 75px
+    }
+
     #carouselExampleCaptions > div.carousel-inner > div.carousel-item.active > div > p:nth-child(2){
         display: block;
         padding-top: 15px;
     }
 
 }
+
+@media screen and (min-width: 1400px){
+    }
 
 .carousel-caption p{
     line-height: 20px;
@@ -264,19 +269,7 @@ h3{
 }
 
 
-@media screen and (min-width: 992px){
-    .carousel-caption{
-        width: 50%;
-        left: 439px;
-    }
-}
 
-@media screen and (min-width: 1200px){
-    .carousel-caption{
-        width: 50%;
-        left: 550px;
-    }
-}
 
 
 body > section.somos.container > div > div.col-10.col-md-8.col-lg-6.m-auto.col-xl-6 > p{
@@ -309,11 +302,7 @@ body > section.somos.container > div > div.col-10.col-md-8.col-lg-6.m-auto.col-x
 
 }
 
-@media screen and (min-width: 768px){
-    .will{
-        border-radius: 75px
-    }
-}
+
 
 .somos{
     background-color: rgb(218, 242, 218);
