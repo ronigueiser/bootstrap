@@ -253,7 +253,8 @@ h3{
 
 @media screen and (min-width: 634px){
     .boton{
-        width: 119px;margin-left: 64%;
+        width: 123px;
+        margin-left: 64%;
         padding-top: 55px;
         display: block;
     }
