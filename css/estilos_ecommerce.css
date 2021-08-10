@@ -1,0 +1,330 @@
+.encontra{
+    margin: 150px 0 50px;
+    font-size: 2.4rem;
+    color: rgb(74, 44, 44);
+}
+
+body > section:nth-child(6) > div:nth-child(2) > div > p:nth-child(2){
+    padding-left: 55px;
+
+
+
+}
+
+body > section:nth-child(6) > div:nth-child(2) > div > p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#dropdownMenuButton1{
+    margin-top: 20px;
+}
+
+.prod{
+    margin-top: 100px;
+
+    margin-bottom: 80px;
+}
+
+.prod div h3{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.muestra{
+    margin-bottom: 25px;
+    margin-top: 80px;
+}
+
+.muestra h4{
+    font-size: 2rem;
+
+
+}
+
+.imagensita{
+    width: 360px;
+    height: 360px;
+}
+
+
+.agregar{
+    color: white;
+    background-color: rgb(74, 44, 44);
+    border-radius: 15px;
+    border: none;
+    width: 85px;
+    margin-bottom: 15px;
+    padding-bottom: 4px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+
+.quitar{
+    color: white;
+    background-color: rgb(74, 44, 44);
+    border-radius: 15px;
+    border: none;
+    padding-bottom: 2px;
+}
+
+.vercarrito{
+    color: white;
+    background-color: rgb(74, 44, 44);
+    border-radius: 15px;
+    border: none;
+    font-size: 1.3rem;
+}
+
+div.ajuste div.d-flex h3{
+    font-size: 2rem;
+}
+
+div.ajuste div.d-flex p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.quienes{
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 768px){
+
+    .ajuste{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+
+
+}
+
+@media screen and (min-width: 1400px){
+    .ajuste{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+@media screen and (max-width: 573px){
+
+    body > section:nth-child(6) > div:nth-child(2) > div.row.flex-nowrap.justify-content-between > p:nth-child(1){
+
+
+        font-size: 1rem;
+    }
+
+    body > section:nth-child(6) > div:nth-child(2) > div > p:nth-child(2){
+
+
+        font-size: 1rem;
+    }
+
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.9);
+}
+
+.modal a {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 1em;
+    right: 1em;
+    border-radius: 2.5em;
+    width: 5em;
+    height: 5em;
+    background-color: rgba(255,255,255,.9);
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(74, 44, 44);
+    text-decoration: none;
+}
+
+.modal a:hover {
+    background-color: rgb(74, 44, 44);
+    color: white;
+}
+
+.modal img {
+    height: 30%;
+}
+
+.modal h3 {
+    margin: 0;
+    text-align: center;
+    color: #f44336;
+}
+.modal p, .modal li {
+
+    text-align: center;
+    color: #ffebee;
+
+}
+.modal > p:nth-child(4){
+    margin: 0;
+}
+
+.modal li {
+    display: flex;
+    justify-content: space-around;
+    margin: .25em 0 15px;
+
+}
+
+.modal li span {
+    font-size: 1em;
+}
+
+.modal > img{
+    background: #dcedc8;
+    border-radius: 15px;
+}
+
+#modalCarrito > p{
+    font-size: 2rem;
+}
+
+#modalCarrito > ul{
+    width: inherit;
+    padding: 0 6rem;
+    font-size: 1.5rem;
+}
+
+#modalCarrito > a{
+    font-size: 2rem;
+    width: 2em;
+    height: 2em;
+}
+
+.finalizar{
+    color: white;
+    background-color: rgb(74, 44, 44) !important;
+    border-radius: 15px;
+    border: none;
+    width: 175px;
+    margin-bottom: 15px;
+    padding-bottom: 4px;
+    font-weight: bold;
+    height: 45px;
+}
+
+.volver{
+    color: white;
+    background-color: rgb(74, 44, 44) !important;
+    border-radius: 15px;
+    border: none;
+    padding-bottom: 2px;
+    width: 66px;
+    height: 30px;
+}
+
+#gracias2{
+    display: none;
+    max-width: 486px;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: pink;
+    border: solid 2px black;
+}
+
+#gracias2:target{
+    display: block;
+}
+
+#gracias2 a{
+    display: block;
+    background-color: blanchedalmond;
+    max-width: 100px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 15px auto auto;
+    color: black;
+    text-align: center;
+}
+
+#gracias2 a:hover{
+    background-color: rgb(218, 232, 218);
+}
+
+#modalCarrito > form{
+    width: 80%;
+    background: #aed581;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 1050px){
+    #modalCarrito > form{
+        width: 50%;
+    }
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal > img{
+
+    height: auto;
+}
+
+.bannerModal{
+    width: 90%;
+}
+
+#eliminar{
+    margin-bottom: 25px;
+
+}
+
+.imgresponsive{
+    width: 100%;
+}
+
+.desc{
+    font-weight:normal; !important;
+}
+
+
+.row_carrito{
+    width: 100%;
+    padding: 0 6rem;
+    font-size: 1.6rem;
+}
+
+.arreglo{
+    width: initial;
+}
+
+input:invalid:focus{
+    background: lightcoral;
+}
+
+input:valid:focus{
+    background: lightgreen;
+}
+
+
+
