@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos_ecommerce.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -51,6 +52,9 @@
                             <a class="nav-link" href="#maraton">Maratones</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#tienda">Tienda</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#nosotros">Nosotros</a>
                         </li>
                         <li class="nav-item">
@@ -72,8 +76,8 @@
 
     <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" ></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -88,7 +92,7 @@
                         capital federal, también queremos que de los entrenamientos te
                         lleves compañeros que se transformaran en amigos.</p>
 
-                    <p class="boton"><a href="#">Conoce más</a></p>
+                    <p class="boton"><a href="#"> Conoce más </a></p>
                 </div>
 
             </div>
@@ -104,7 +108,7 @@
                         capital federal, también queremos que de los entrenamientos te
                         lleves compañeros que se transformaran en amigos.</p>
 
-                    <p class="boton"><a href="#">Conoce más</a></p>
+                    <p class="boton"><a href="#"> Conoce más </a></p>
                 </div>
 
 
@@ -167,9 +171,9 @@
 
                 <div class="col-md-6">
 
-                    <div class="pastilla row">
+                    <div class="pastilla zapatilla">
 
-                        <div class="p-4 zapatilla">
+                        <div class="p-4">
                             <p>
 
                                 Lo puede hacer cualquier persona. No es necesario tener habilidades
@@ -183,9 +187,9 @@
 
                 <div class="col-md-6">
 
-                    <div class="pastilla row">
+                    <div class="pastilla corriendo">
 
-                        <div class="p-4 corriendo">
+                        <div class="p-4 ">
                             <p>
 
                                 Mantiene el cuerpo en forma. Uno de los principales beneficios de
@@ -201,9 +205,9 @@
 
             <div class="col-md-6">
 
-                    <div class="pastilla row">
+                    <div class="pastilla botiquin">
 
-                        <div class="p-4 botiquin">
+                        <div class="p-4 ">
                             <p>
 
                                 Disminuye el riesgo de ciertas enfermedades. Dentro de los principales
@@ -220,9 +224,9 @@
 
             <div class="col-md-6">
 
-                <div class="pastilla row">
+                <div class="pastilla feliz">
 
-                    <div class="p-4 feliz">
+                    <div class="p-4 ">
                         <p>
 
                             Se generan endorfinas. Al realizar ejercicio, en el cerebro se generan
@@ -493,6 +497,227 @@
 
 </section>
 
+<section>
+
+    <div class="container">
+        <h2 class="encontra">Encontra todo lo que necesitas para empezar a correr</h2>
+
+        <div class="row">
+
+            <button id="eliminar" class="col-5 col-sm-2 vercarrito">Vaciar carrito </button>
+
+        </div>
+    </div>
+
+    <div class="container">
+            <div class="row flex-nowrap justify-content-between">
+<!--                <button id="cat" class="col-2">Categorias</button>-->
+                <p class="col-2 col-sm-4"><span id="agregar">0</span> ítems agregados</p>
+                <p  class="col-5 col-sm-4">$<span id="pagar">0</span> es el total</p>
+                <button id="ver" class="col-5 col-sm-2 vercarrito">Ver carrito </button>
+            </div>
+
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                Categorias
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#" id="todas">Todas</a></li>
+                <li><a class="dropdown-item" href="#" id="ropa">Ropa</a></li>
+                <li><a class="dropdown-item" href="#" id="invierno">Correr en invierno</a></li>
+                <li><a class="dropdown-item" href="#" id="accesorios">Accesorios</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+
+        <div class="container prod">
+            <div class="row flex-column align-items-center">
+                <h3 class="text-center" id="tienda">Productos</h3>
+            </div>
+        </div>
+
+        <div id="productos" class="container">
+
+<!--            <div class="muestra">-->
+
+<!--                <h4>Ropa</h4>-->
+
+<!--            </div>-->
+
+<!--            <div class="row">-->
+
+
+<!--                <div class="col-md-6 col-lg-4">-->
+<!--                    <div class="ajuste">-->
+
+<!--                            <img src="img/Ropa/Buzo_Gris.png" alt="Buzo para correr" class=""/>-->
+
+<!--                        <div class="d-flex flex-column align-items-center">-->
+<!--                            <h3>Buzo</h3>-->
+<!--                            <p>Precio: <span>$0</span></p>-->
+<!--                            <p class="desc">Descripción</p>-->
+<!--                            <button class="agregar">Agregar</button>-->
+<!--                            <button class="quitar">Quitar</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+
+
+<!--                <div class="col-md-6 col-lg-4">-->
+<!--                    <div class="ajuste">-->
+
+<!--                            <img src="img/Ropa/Remera_Azul.png" alt="Remera para running" class=""/>-->
+
+
+<!--                        <div class="d-flex flex-column align-items-center">-->
+<!--                            <h3>Remera</h3>-->
+<!--                            <p>Precio: <span>$0</span></p>-->
+<!--                            <p class="desc">Descripción</p>-->
+<!--                            <button class="agregar">Agregar</button>-->
+<!--                            <button class="quitar">Quitar</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+
+
+<!--                <div class="col-md-6 col-lg-4">-->
+<!--                    <div class="ajuste">-->
+
+<!--                            <img src="img/Ropa/Short_Rojo.png" alt="Short para salir a correr" class=""/>-->
+
+
+<!--                        <div class="d-flex flex-column align-items-center">-->
+<!--                            <h3>Short</h3>-->
+<!--                            <p>Precio: <span>$0</span></p>-->
+<!--                            <p class="desc">Descripción</p>-->
+<!--                            <button class="agregar">Agregar</button>-->
+<!--                            <button class="quitar">Quitar</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+
+<!--                <div class="muestra">-->
+
+<!--                    <h4>Accesorios para invierno</h4>-->
+
+<!--                </div>-->
+
+<!--                <div class="col-md-6 col-lg-4">-->
+<!--                    <div class="ajuste">-->
+
+<!--                            <img src="img/Frio/Calzas_Negro.png" alt="Calzas para correr en invierno" class=""/>-->
+
+
+<!--                        <div class="d-flex flex-column align-items-center">-->
+<!--                            <h3>Calzas</h3>-->
+<!--                            <p>Precio: <span>$0</span></p>-->
+<!--                            <p class="desc">Descripción</p>-->
+<!--                            <button class="agregar">Agregar</button>-->
+<!--                            <button class="quitar">Quitar</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-md-6 col-lg-4">-->
+<!--                    <div class="ajuste">-->
+
+<!--                            <img src="img/Frio/Cuello_Azul.png" alt="Cuello para el frio" class=""/>-->
+
+
+<!--                        <div class="d-flex flex-column align-items-center">-->
+<!--                            <h3>Cuellito</h3>-->
+<!--                            <p>Precio: <span>$0</span></p>-->
+<!--                            <p class="desc">Descripción</p>-->
+<!--                            <button class="agregar">Agregar</button>-->
+<!--                            <button class="quitar">Quitar</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-md-6 col-lg-4">-->
+<!--                    <div class="ajuste">-->
+
+<!--                            <img src="img/Frio/Guantes_Negro.png" alt="Guantes para correr" class=""/>-->
+
+
+<!--                        <div class="d-flex flex-column align-items-center">-->
+<!--                            <h3>Guantes</h3>-->
+<!--                            <p>Precio: <span>$0</span></p>-->
+<!--                            <p class="desc">Descripción</p>-->
+<!--                            <button class="agregar">Agregar</button>-->
+<!--                            <button class="quitar">Quitar</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="muestra">-->
+
+<!--                    <h4>Accesorios</h4>-->
+
+<!--                </div>-->
+
+<!--                <div class="col-md-6 col-lg-4">-->
+<!--                    <div class="ajuste">-->
+
+<!--                            <img src="img/Accesorios/Botella_Azul.png" alt="Botella para entrenar" class=""/>-->
+
+
+<!--                        <div class="d-flex flex-column align-items-center">-->
+<!--                            <h3>Botella</h3>-->
+<!--                            <p>Precio: <span>$0</span></p>-->
+<!--                            <p class="desc">Descripción</p>-->
+<!--                            <button class="agregar">Agregar</button>-->
+<!--                            <button class="quitar">Quitar</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-md-6 col-lg-4">-->
+<!--                    <div class="ajuste">-->
+
+<!--                            <img src="img/Accesorios/Reloj.png" alt="Reloj runner" class=""/>-->
+
+
+<!--                        <div class="d-flex flex-column align-items-center">-->
+<!--                            <h3>Reloj</h3>-->
+<!--                            <p>Precio: <span>$0</span></p>-->
+<!--                            <p class="desc">Descripción</p>-->
+<!--                            <button class="agregar">Agregar</button>-->
+<!--                            <button class="quitar">Quitar</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-md-6 col-lg-4">-->
+<!--                    <div class="ajuste">-->
+
+<!--                            <img src="img/Accesorios/Porta_Celular.png" alt="Portador de celular" class=""/>-->
+
+
+<!--                        <div class="d-flex flex-column align-items-center">-->
+<!--                            <h3>Porta Celular</h3>-->
+<!--                            <p>Precio: <span>$0</span></p>-->
+<!--                            <p class="desc">Descripción</p>-->
+<!--                            <button class="agregar">Agregar</button>-->
+<!--                            <button class="quitar">Quitar</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+        </div>
+
+    </div>
+
+</section>
+
+
 <section class="somos container">
 
     <div class="quienes row">
@@ -520,69 +745,215 @@
 <aside class="container">
 
     <!--    Puse la ruta para php pero no funciono, por eso le puse "index.html#gracias"-->
+
     <div class="row">
         <h2 id="datos" class="titulo col-10 m-auto mt-5 col-lg-6">Formulario</h2>
     </div>
 
 
     <form action="enviar_formulario.php" method="post" enctype="application/x-www-form-urlencoded" class="row" >
-        <div class="col-10 m-auto mt-5 col-lg-6">
 
 
+            <div class="col-10 m-auto mt-5 col-lg-6">
 
 
-            <p id="gracias">Gracias por el envio!<a href="#">Cerrar</a> </p>
+                <p id="gracias">Gracias por el envio!<a href="#">Cerrar</a> </p>
 
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="email" class="form-control" id="nombre" placeholder="Nombre" required>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="Apellido" placeholder="Apellido" name="apellido" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="Email" placeholder="name@example.com" name="email" required>
+                </div>
+
+                <label>¿Participo de una maratón de al menos 5KM?</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="participo" id="si">
+                    <label class="form-check-label" for="si">
+                        Si
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="participo" id="no">
+                    <label class="form-check-label" for="no">
+                        No
+                    </label>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="consultas" class="form-label">Deja tu consulta</label>
+                    <textarea class="form-control" id="consultas" rows="3" style="resize: none" name="consulta"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar" class="enviar mb-3">
+
             </div>
 
-            <div class="mb-3">
-                <label for="Apellido" class="form-label">Apellido</label>
-                <input type="email" class="form-control" id="Apellido" placeholder="Apellido" required>
-            </div>
-
-            <div class="mb-3">
-                <label for="Email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="Email" placeholder="name@example.com" required>
-            </div>
-
-            <label>¿Participo de una maratón de al menos 5KM?</label>
-
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="participo" id="si">
-                <label class="form-check-label" for="si">
-                    Si
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="participo" id="no">
-                <label class="form-check-label" for="no">
-                    No
-                </label>
-            </div>
-
-
-            <div class="mb-3">
-                <label for="consultas" class="form-label">Deja tu consulta</label>
-                <textarea class="form-control" id="consultas" rows="3" style="resize: none"></textarea>
-            </div>
-
-            <input type="submit" value="Enviar" class="enviar mb-3">
-
-        </div>
     </form>
 </aside>
+
+
+<!--CHEQUEAR-->
+
+<!--<div class="modal" id="modalProducto">-->
+<!--    <a href="javascript:void(0)">X</a>-->
+<!--    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">-->
+<!--        <div class="carousel-indicators">-->
+<!--            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
+<!--            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>-->
+<!--        </div>-->
+<!--        <div class="carousel-inner">-->
+<!--            <div class="carousel-item active">-->
+<!--                <img src="img/Frio/bolsoNike.png" class="d-block w-100" alt="Nombre del producto">-->
+<!--            </div>-->
+<!--            <div class="carousel-item">-->
+<!--                <img src="img/Frio/calzaNegra.png" class="d-block w-100" alt="Nombre del producto">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">-->
+<!--            <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--            <span class="visually-hidden">Previous</span>-->
+<!--        </button>-->
+<!--        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">-->
+<!--            <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--            <span class="visually-hidden">Next</span>-->
+<!--        </button>-->
+<!--    </div>-->
+<!--    <h3>Producto</h3>-->
+<!--    <p>Precio: <span>$0</span></p>-->
+<!--    <p>Descripción</p>-->
+<!--    <button class="agregar">Agregar</button>-->
+<!--    <button class="quitar">Quitar</button>-->
+<!--</div>-->
+
+
+
+
+<!--<div class="modal" id="modalProducto">-->
+<!--    <a href="javascript:void(0)">X</a>-->
+<!--    <img src="img/Frio/Calzas_Negro.png" alt="Nombre del producto" />-->
+<!--    <h3>Producto</h3>-->
+<!--    <p>Precio: <span>$0</span></p>-->
+<!--    <p>Descripción</p>-->
+<!--    <button class="agregar">Agregar</button>-->
+<!--    <button class="quitar">Quitar</button>-->
+<!--</div>-->
+
+
+
+
+<!--<div class="modal" id="modalCarrito">-->
+<!--    <a href="javascript:void(0)">X</a>-->
+<!--    <p>Items: <span>3</span> - Total: <span>$0</span></p>-->
+
+<!--    <ul>-->
+<!--        <li>Nombre del producto <span>$0</span> <span>0 items</span> </li>-->
+<!--        <li>Nombre del producto <span>$0</span> <span>0 items</span> </li>-->
+<!--        <li>Nombre del producto <span>$0</span> <span>0 items</span> </li>-->
+<!--    </ul>-->
+
+<!--    <button class="finalizar">Finalizar compra</button>-->
+<!--    <button class="volver">Volver</button>-->
+
+<!--</div>-->
+
+<!--<aside>-->
+
+<!--    <div class="modal" id="modalCarrito">-->
+<!--        <a href="javascript:void(0)">X</a>-->
+
+<!--        <form action="enviar_formulario.php" method="post" enctype="application/x-www-form-urlencoded" class="row" >-->
+
+
+<!--            <div class="col-10 m-auto mt-5 ">-->
+
+
+<!--                <p id="gracias2">Gracias por el envio!<a href="#">Cerrar</a> </p>-->
+
+<!--                <div class="mb-3">-->
+<!--                    <label for="Nombre_Apellido" class="form-label">Nombre y Apellido</label>-->
+<!--                    <input type="email" class="form-control" id="Nombre_Apellido" placeholder="Nombre y Apellido" name="nombre" required>-->
+<!--                </div>-->
+
+<!--                <div class="mb-3">-->
+<!--                    <label for="Su_Email" class="form-label">Email</label>-->
+<!--                    <input type="email" class="form-control" id="Su_Email" placeholder="name@example.com" name="Email" required>-->
+<!--                </div>-->
+
+<!--                <div class="mb-3">-->
+<!--                    <label for="Telefono" class="form-label">Telefono</label>-->
+<!--                    <input type="number" class="form-control" id="Telefono" placeholder="11-2222-3333" name="email" required>-->
+<!--                </div>-->
+
+<!--                <div class="mb-3">-->
+<!--                    <label for="direccion" class="form-label">Lugar de entrega</label>-->
+<!--                    <input type="number" class="form-control" id="direccion" placeholder="Dirección..." name="Direccion" required>-->
+<!--                </div>-->
+
+
+<!--                <div class="mb-3">-->
+<!--                    <label for="Fecha" class="form-label">Fecha de entrega</label>-->
+<!--                    <input type="date" class="form-control" id="Fecha" name="fecha">-->
+<!--                </div>-->
+
+<!--                <div class="mb-3">-->
+
+
+<!--                    <label for="ccn">Numero Tarjeta de Credito:</label>-->
+<!--                    <input id="ccn" class="form-control" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>-->
+<!--                </div>-->
+
+<!--                <div class="inputs">-->
+<!--                    <input type="submit" value="Enviar" class="finalizar mb-3">-->
+<!--                    <input type="submit" value="Volver" class="volver mb-3">-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--        </form>-->
+
+
+
+<!--    </div>-->
+<!--</aside>-->
+
+
+<!--<div class="modal" id="modalProducto">-->
+<!--    <a href="javascript:void(0)">X</a>-->
+<!--    <img src="img/Banner/Oferta_calzas.jpg" alt="Oferta de Calzas para invierno" />-->
+<!--</div>-->
+
+<!--<div class="modal" id="modalProducto">-->
+<!--    <a href="javascript:void(0)">X</a>-->
+<!--    <img src="img/Banner/Oferta_reloj.jpg" alt="Oferta Reloj Running" />-->
+<!--</div>-->
+
+<!--<div class="modal" id="modalProducto">-->
+<!--    <a href="javascript:void(0)">X</a>-->
+<!--    <img src="img/Banner/Oferta_remera.jpg" alt="Oferta remera de entrenamiento" />-->
+<!--</div>-->
+
+
+
+<script src="final.js"></script>
 
 <footer>
 
     <div>
         <ul>
 
-            <li>Nombre: Roni</li>
-            <li>Apellido: Gueiser</li>
-            <li>Materia: Interacción con Dispositivos Móviles</li>
+            <li>Nombre: Roni y Ana Paula</li>
+            <li>Apellido: Gueiser y Yamamoto</li>
+            <li>Materia: Programación 1</li>
             <li>Turno: Noche</li>
             <li>Comisión: A</li>
             <li>Año: 2021</li>
